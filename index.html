@@ -157,4 +157,7 @@ function dlPDF(n,fn){const url=URL.createObjectURL(b64ToBlob(PDF[n]));const a=do
 document.querySelectorAll(".btn.view").forEach(b=>b.addEventListener("click",()=>viewPDF(b.dataset.n)));
 document.querySelectorAll(".btn.dl").forEach(b=>b.addEventListener("click",()=>dlPDF(b.dataset.n,b.dataset.fn)));
 document.getElementById("dlall").addEventListener("click",()=>{Object.keys(PDF).forEach((n,i)=>{const fn=document.querySelector('.btn.dl[data-n="'+n+'"]').dataset.fn;setTimeout(()=>dlPDF(n,fn),i*400);});});
-</script></body></html>
+</script>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body></html>
